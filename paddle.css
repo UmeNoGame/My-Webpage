@@ -1,0 +1,68 @@
+#paddle-area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  max-width: 70vmin;
+  max-height: 70vmin;
+  margin: 10vmin auto;
+  box-shadow: 0 0 10vmin red;
+}
+
+#color-block {
+    display : grid;
+    grid-template-columns: repeat(6, 10vmin);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 1vmin;
+    row-gap: 1vmin;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+    .cell {
+      border-radius: 5px;
+      height: 28px;
+      position: relative;
+    } 
+        .red { 
+          background: red; 
+        }
+       .purple { 
+         background: purple;
+        }
+       .pink { 
+          background: pink;
+          }
+
+#ball {
+  --ball-size: 6%; 
+  
+  background: mintcream;
+  position: absolute;
+  width: var(--ball-size);
+  height: var(--ball-size);
+  border-radius: 100%;
+  left: 50%;
+  top: 94%;
+  transform: translate(-50%) translateY(-50%)
+}
+
+#ball img {
+  width: 100%;
+}
+
+#paddle {
+
+  background: mintcream;
+  position: absolute;
+  width: 20%;
+  height: 3%;
+  border-radius: 10px;
+  left: 40%;
+  top: 96%;
+  box-sizing: border-box;
+}

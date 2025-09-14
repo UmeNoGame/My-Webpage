@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Webpage About Me</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+<body class="d-flex flex-column min-vh-100">
+        <header>
+            <section id="navigation">
+                <nav class="navbar navbar-expand-lg bg-transparent">
+                    <div class="container-fluid d-flex align-items-center justify-content-between">
+                        <div class="mb-0 fs-1 fw-bold">Stack & Story</div>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="page-about.me.html">About Me</a>
+                                </li>
+                                 <li class="nav-item dropdown">
+                                    <span class="nav-link dropdown-toggle" id="myWorkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        My Works
+                                    </span>
+                                    <ul class="dropdown-menu" aria-labelledby="myWorkDropdown">
+                                        <li><a class="nav-link" aria-current="page" href="snake.html">🎮 Snake</a></li>
+                                        <li><a class="nav-link" aria-current="page" href="paddle.html">🏓 Paddle</a></li>
+                                    </ul>
+                                </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="page-volunteer.html">Volunteer Experience</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-contact.html">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.linkedin.com/in/garance-wisniewski-066860203/">
+                                        <i class="fa-brands fa-linkedin"></i></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </header>
+
+        <main class="flex-fill">
+            <section class="container" id="presentation">
+                <h2 class="text-center mx-auto">A little bit more about me <i id="star" class="fas fa-star"></i></h2>
+                <div class="container p-5">
+                    <p class="1h-base">
+                        Hello, I am Garance, 25 years old and born in France.
+                        My path so far has been anything but linear: I studied law, explored publishing and community service. Each of these chapters has taught me something unique—discipline, adaptability, communication, and creativity. Today, I'm channeling this eclectic background into a new journey: a career in computer science.
+                        Technology excites me because it combines logic and problem-solving with innovation and creativity, and I'm eager to grow in this field.
+                    </p>
+                    <p class="lh-base">
+                        Animals and sports have always been an essential part of my life. I grew up riding horses and spent my childhood in competition, even reaching the French Championship in show jumping, where I proudly earned third place. Beyond equestrian sports, I practice Yoseikan Budo, cycling, and running, all of which give me resilience, focus, and the drive to push beyond limits.
+                        My loyal shiba, Ume, is also by my side, a daily reminder of curiosity, joy, and companionship. I also have two cats: Ninja and Flocon.
+                    </p>
+                    <p class="lh-base">
+                        Cooking and pastry are another passion of mine—more than just a creative outlet, they are a way to bring joy to the people I love.
+                        For me, they are about learning precision, embracing patience, and celebrating an essential part of French culture: sharing good food, living fully, and creating warm moments with others.
+                    </p>
+                    <p class="lh-base">
+                        Reading is another source of inspiration for me. For several years, I ran a literary blog on Instagram, where I wrote reviews and collaborated with publishing houses on partnerships.
+                        It was an enriching experience that combined creativity, discipline, and communication, and it deepened my love for stories and culture. </p>
+                    <p class="lh-base">
+                        I see myself as dynamic, curious, and open-minded, always motivated to learn from others while contributing my own energy and skills. Whether through technology, teamwork, or cultural exchange.
+                        I'm passionate about learning, discovering new cultures, and finding creative ways to connect with people.
+                    </p>
+                </div>
+            </section>
+
+            <section class="d-flex justify-content-center" id="MyCarousel">
+                <div id="carousel-pics" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-pics" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-pics" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-pics" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel-pics" data-bs-slide-to="3" aria-label="Slide 0"></button>
+                    </div>
+
+                    <div class="carousel-inner rounded-3 shadow-4-strong">
+                        <div class="carousel-item active">
+                            <img src="ume.jpg" class="d-block w-100" alt="My dog and me">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="ume_and_me.jpg" class="d-block w-100" alt="My dog">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tans.jpg" class="d-block w-100" alt="My horse">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="cats.jpg" class="d-block w-100" alt="My cats">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pics" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-pics" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+            <p>
+                <a href="">Mentions légales</a> |
+                <a href="">Politique de cookies</a> |
+            </p>
+
+            <p class="col-md-4">© 2025 Garance W. All rights reserved.</p>
+        </footer>
+
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</html>

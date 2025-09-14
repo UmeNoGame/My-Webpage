@@ -1,0 +1,328 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    color: #374151;
+    font-family: 'Lora', serif;
+    background-color:#fffcfb;
+}
+
+main {
+    background-color:#fffcfb;
+}
+
+
+.navbar li a {
+    font-family: 'Lora', serif;
+    color: #4B367C;
+    font-size: 18px;
+}
+
+.navbar li a:hover {
+    color: #A78BFA;
+}
+.navbar li span {
+    font-family: 'Lora', serif;
+    color: #4B367C;
+    font-size: 18px;
+}
+
+.navbar li span:hover {
+    color: #A78BFA;
+}
+
+
+#pic-of-me {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 0 5%;
+}
+
+h2, h3, h4, h5 {
+    font-family: "Montserrat", serif;
+}
+
+p {
+    font-family: "Lora", serif;
+    font-size: 18px;
+    text-align: justify;
+
+}
+
+header {
+    background-size: 300% 300%;
+    padding: 2% 6%;
+    background-image: linear-gradient(-45deg, #a1c4fd, #c2e9fb, #fbc2eb, #fad0c4 100%);
+    animation: colorMove 20s ease infinite;
+    border: 1px solid;
+}
+
+#hero {
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero h1 {
+    font-size: 70px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+@keyframes colorMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+#star {
+    margin-left: 20px;
+}
+
+
+.container {
+    padding: 5% 0;
+}
+
+
+.btn-custom  {
+    margin-top: 10px;
+    width: 120px! important;
+    background-color: #a1c4fd !important;
+    color: #fffcfb !important;
+    box-shadow: rgba(173, 173, 173, 0.5) 0 2px 5px 0 !important;;
+}
+
+.btn-custom:hover  {
+    transform: scale(1.1);
+}
+
+
+#writing-content {
+    max-width: 600px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#writing-content p {
+    margin-top: 25px;
+}
+
+
+#language {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+ .lang {
+    color: transparent;
+    animation: letterColor 2s linear infinite;
+    font-size: 25px;
+}
+
+@keyframes letterColor {
+    0% {
+        background: linear-gradient(#a1c4fd, #c2e9fb);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(#fbc2eb, #fad0c4);
+        -webkit-background-clip: text;
+    }
+}
+
+#me {
+    max-width: 300px; 
+    height: auto; 
+    object-fit: contain;
+}
+
+#skills {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#fleche {
+    position: absolute;
+    max-width: 100px;
+    right: 45%;
+    top: -18%;
+    filter: saturate(0) brightness(0);
+    transform: rotate(235deg);
+}
+
+#spinner {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+    right: 10%;
+    top: -20%;
+}
+
+#spinner img {
+    max-width: 75px;
+}
+
+#skill-listing {
+    position: relative; /* Reference for absolute positioning of vertical title */
+    display: flex;
+    justify-content: center; /* Center the ul horizontally */
+    align-items: center; /* Center vertically if needed */
+}
+
+.list-group-item {
+    font-size: 17px; /* Larger font size for list items */
+    padding: 1rem 1.5rem; /* Increased padding for each item */
+    line-height: 1.6; /* Improve readability with larger text */
+}
+
+
+#title-right-skills {
+    position: absolute;
+    right: 20px; /* Distance from right edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 2rem; /* Slightly larger font for vertical title */
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+
+   #title-top-skills {
+        display: none;
+    }
+
+.link {
+    position: absolute;
+    z-index: 10;
+    filter: saturate(0) brightness(0);
+    width: 65px;
+}
+
+.link:nth-child(1) {
+    top: -15%;
+    left: 18%;
+    transform: rotate(220deg);
+}
+
+.link:nth-child(2) {
+    top: -16%;
+    left: 30%;
+    transform: rotate(135deg);
+}
+
+
+
+.list-education {
+    position: relative;
+}
+
+#education {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position: relative;
+
+}
+
+.logo {
+    position: absolute;
+    font-size: 35px;
+    top: 0;
+    right: 5%;
+}
+
+.list-experience {
+    position: relative;
+}
+
+
+/* Page "About Me"*/
+.carousel{
+  max-width: 450px  !important;
+  max-height: auto !important;
+  object-fit: contain !important;
+}
+
+
+/* Page "Volunteer"*/
+.imgV {
+    max-width: 450px !important;
+    max-height: 450px !important;
+}
+
+
+.text-muted {
+    visibility: hidden;
+}
+
+/* Page Contact*/
+#contact {
+    margin-top: 5%;
+}
+
+
+footer {
+    background-color:#fffcfb;
+}
+
+
+@media (max-width: 1224px) {
+
+    .school-logo {
+    font-size: 25px;
+    }
+
+    #education {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link {
+        display: none;
+    }
+
+    #contact {
+        margin-top: 15%;
+    }
+
+    #skills {
+        margin-bottom: 0px;
+    }
+
+    #title-right-skills {
+        display: none;
+    }
+
+    #title-top-skills {
+        display: block;
+    }
+
+}
+
