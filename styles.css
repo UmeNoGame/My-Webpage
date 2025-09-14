@@ -294,6 +294,10 @@ footer {
 
 
 @media (max-width: 1224px) {
+    #hero h1 {
+    font-size: 45px;
+    }
+
     #spinner {
     display: none;
     }
