@@ -299,7 +299,7 @@ footer {
     }
 
     #fleche {
-    display: none;
+    display: none !important;
     }
 
     #spinner {
