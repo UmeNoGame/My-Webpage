@@ -294,6 +294,9 @@ footer {
 
 
 @media (max-width: 1224px) {
+    #spinner {
+    display: none;
+    }
 
     .school-logo {
     font-size: 25px;
