@@ -15,7 +15,7 @@
   aspect-ratio: 1 / 1; 
   max-width: 70vmin;
   max-height: 70vmin;
-  margin: 15vmin auto;
+  margin: 5vmin auto;
   box-shadow: 0 0 10vmin red;
 }
 
@@ -85,7 +85,7 @@
 
 /* Play button */
 .btn-game {
-  font-size: 24px !important;
+  font-size: 2vmin !important;
   font-weight: bold !important;
   width: 10vmin;
   height: 6vmin;

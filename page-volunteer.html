@@ -36,6 +36,7 @@
                                     <ul class="dropdown-menu" aria-labelledby="myWorkDropdown">
                                         <li><a class="nav-link" aria-current="page" href="snake.html">🎮 Snake</a></li>
                                         <li><a class="nav-link" aria-current="page" href="paddle.html">🏓 Paddle</a></li>
+                                        <li><a class="nav-link" aria-current="page" href="nasa.html">🪐 Explore Universe</a></li>
                                     </ul>
                                 </li>
                                  <li class="nav-item">
@@ -58,7 +59,7 @@
             </section>
         </header>
 
-        <main class="flex-fill">
+        <main class="flex-fill" id="main-volunteer">
             <div class="container">
 
                 <section class="container">
@@ -123,15 +124,15 @@
                         <div class="row align-items-start">
                             <div class="col d-flex flex-column justify-content-center gap-3">
                                 <button class="btn btn-info" id="info-culture">Click here</button>
-                                <p4 class="text-muted" id="text-culture">Cambodian people celebrate a unique festival called Pchum Ben (Festival of the Dead). For 15 days, Cambodians bring food to temples to honor their ancestors - it’s both a spiritual and social tradition.</p4>
+                                <p class="text-muted" id="text-culture">Cambodian people celebrate a unique festival called Pchum Ben (Festival of the Dead). For 15 days, Cambodians bring food to temples to honor their ancestors - it’s both a spiritual and social tradition.</p>
                             </div>
                             <div class="col d-flex flex-column justify-content-center gap-3">
                                 <button class="btn btn-info" id="info-food">Click here</button>
-                                <p4 class="text-muted" id="text-food">Cambodia's national dish is Amok, a fish curry steamed in banana leaves with coconut milk.</p4>
+                                <p class="text-muted" id="text-food">Cambodia's national dish is Amok, a fish curry steamed in banana leaves with coconut milk.</p>
                             </div>
                             <div class="col d-flex flex-column justify-content-center gap-3">
                                 <button class="btn btn-info" id="info-history">Click here</button>
-                                <p4 class="text-muted" id="text-history">The Khmer Empire (9th–15th century) was one of the most powerful in Southeast Asia, with Angkor as its thriving capital.</p4>
+                                <p class="text-muted" id="text-history">The Khmer Empire (9th–15th century) was one of the most powerful in Southeast Asia, with Angkor as its thriving capital.</p>
                             </div>
                         </div>
                     </section>
@@ -156,13 +157,13 @@
         const btnHistory = document.getElementById("info-history");
 
         btnCulture.addEventListener("click", function () {
-            document.getElementById("text-culture").style.visibility = "visible";
+            document.getElementById("text-culture").style.display = "flex";
         });
          btnFood.addEventListener("click", function () {
-            document.getElementById("text-food").style.visibility = "visible";
+            document.getElementById("text-food").style.display = "flex";
         });
          btnHistory.addEventListener("click", function () {
-            document.getElementById("text-history").style.visibility = "visible";
+            document.getElementById("text-history").style.display = "flex";
         });
     </script>
 </html>

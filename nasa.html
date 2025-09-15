@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Explore Universe with NASA</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="explore-universe.css">
+    </head>
+
+    <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block p-4">
+            <div class="container-fluid">
+                <h1 class="navbar-brand" href="#">Explore Universe with NASA</h1>
+
+                <form class="form-inline" method="GET" action="https://images-api.nasa.gov/search?media_type=image">
+                    <label for="site-search">search :</label>
+                    <input type="search" id="site-search" name="q" placeholder="eg. Moon..." required>
+                    <button class="submit" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="pulse-loader"></div>
+
+        <div class="container">
+            <div class="row"> <!-- ici -->
+                <div class="col sous-block" id="block-principal">
+                    <img alt="">
+                    <div class="block-text">
+                        <h2 id="h2-principal">hello</h2>
+                        <p class="description" id="d-principal">here begin</p>
+                    </div>
+                </div>
+
+                <div id="block1" class="col sous-block">
+                    <img alt="">
+                    <div class="block-text">
+                        <h2></h2>
+                        <p class="description"></p>
+                        <button class="more" id="btn1">..."Lire plus" !</button>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="row"> <!-- et ici -->
+                <div id="block2" class="col sous-block">
+                    <img alt="">
+                    <div class="block-text">
+                        <h2></h2>
+                        <p class="description"></p>
+                        <button class="more" id="btn2">..."Lire plus" !</button>
+                    </div>
+                </div>
+
+                <div id="block3" class="col sous-block">
+                    <img alt="">
+                    <div class="block-text">
+                        <h2></h2>
+                        <p class="description"></p>
+                        <button class="more" id="btn3">..."Lire plus" !</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+ 
+    <script src="explore-universe.js"></script>
+    </body>
+</html>

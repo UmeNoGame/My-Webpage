@@ -265,18 +265,23 @@ header {
 
 /* Page "About Me"*/
 .carousel{
-  max-width: 450px  !important;
-  max-height: auto !important;
-  object-fit: contain !important;
+  width: 250px !important;
+  height: auto !important;
 }
 
 
 /* Page "Volunteer"*/
 .imgV {
-    max-width: 450px !important;
+    max-width: 400px !important;
     max-height: 450px !important;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#khmer-fact .btn-info {
+  background-color: #d9534f; /* Warm red inspired by Cambodian culture */
+  border: none;
+}
 
 .text-muted {
     visibility: hidden;
@@ -333,6 +338,51 @@ footer {
 
     #title-top-skills {
         display: block;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    #hero h3 {
+    font-size: 35px;
+    }
+
+    .carousel{
+    max-width: 250px  !important;
+    max-height: auto !important;
+    object-fit: contain !important;
+    }
+
+    #presentation {
+    margin-top:  4% !important;
+    }
+    .imgV {
+    margin-bottom: 1rem; /* Space below images */
+    }
+
+    /* Stack images and text vertically */
+    .row.align-items-center {
+    flex-direction: column;
+    }
+
+    #main-volunteer .col-12 {
+    padding: 0.5rem;
+    }
+
+    #khmer-fact .row {
+    flex-direction: column; 
+    gap: 1.5rem;
+    }
+
+    #khmer-fact .btn-info {
+    width: 100%; 
+    font-size: 0.9rem;
+    }
+
+    #khmer-fact p.text-muted {
+    display: none;
+    font-size: 0.85rem;
     }
 
 }
