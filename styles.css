@@ -179,8 +179,8 @@ header {
     gap: 5px;
     flex-direction: row;
     align-items: center;
-    right: 10%;
-    top: -20%;
+    right: 15%;
+    top: -15%;
 }
 
 #spinner img {

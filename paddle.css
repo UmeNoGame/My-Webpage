@@ -1,3 +1,4 @@
+
 #paddle-area {
   position: relative;
   display: flex;
@@ -6,15 +7,15 @@
   background: black;
   width: 100%;
   aspect-ratio: 1 / 1; 
-  max-width: 70vmin;
-  max-height: 70vmin;
+  max-width: 65vmin;
+  max-height: 65vmin;
   margin: 5vmin auto;
   box-shadow: 0 0 10vmin red;
 }
 
 #color-block {
     display : grid;
-    grid-template-columns: repeat(6, 10vmin);
+    grid-template-columns: repeat(6, 8vmin);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 1vmin;
     row-gap: 1vmin;

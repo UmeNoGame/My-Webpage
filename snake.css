@@ -13,8 +13,8 @@
   background: black;
   width: 100%;
   aspect-ratio: 1 / 1; 
-  max-width: 70vmin;
-  max-height: 70vmin;
+  max-width: 65vmin;
+  max-height: 65vmin;
   margin: 5vmin auto;
   box-shadow: 0 0 10vmin red;
 }
